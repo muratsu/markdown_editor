@@ -1,0 +1,19 @@
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    function start() {
+    	app = {};
+	    app.socket = io.connect();
+    	app.doc = document.getElementById('txt');
+
+	    app.update = function(data) {
+	    	app.doc.innerHTML = data;
+	    }
+
+	    app.socket.on('md_srv', app.update);
+	    app.socket.emit('ready');
+    };
+</script>
+<body onload='start()'>
+<div id="txt"></div>
+</body>

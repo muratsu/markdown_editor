@@ -1,0 +1,29 @@
+{
+  "name": "markdown_editor",
+  "version": "0.0.0",
+  "description": "markdown editor for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muratsu/markdown_editor.git"
+  },
+  "keywords": [
+    "markdown",
+    "editor"
+  ],
+  "author": "Murat Sutunc",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "1d67b1664bafc8ac65ae73e67b06975121b9cc96",
+  "bugs": {
+    "url": "https://github.com/muratsu/markdown_editor/issues"
+  },
+  "dependencies": {
+    "markdown": "~0.5.0",
+    "watchr": "~2.4.11",
+    "express.io": "~1.1.13"
+  }
+}
